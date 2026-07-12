@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia — Contemporary Mediterranean Fine Dining</title>
+  <meta name="description" content="Aurelia is a contemporary Mediterranean restaurant offering seasonal tasting menus, an award-winning wine list, and an intimate dining room in the heart of the city. Reserve your table today.">
+  <meta name="keywords" content="fine dining restaurant, Mediterranean cuisine, tasting menu, reservations, wine bar">
+  <meta name="author" content="Aurelia Restaurant">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aurelia — Contemporary Mediterranean Fine Dining">
+  <meta property="og:description" content="Seasonal Mediterranean cuisine, a curated wine cellar, and an intimate dining room. Reserve your table at Aurelia.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥂</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Loading Screen ===== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <span class="preloader-letter">A</span>
+      <span class="preloader-ring"></span>
+    </div>
+  </div>
+
+  <!-- ===== Skip Link ===== -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="logo" aria-label="Aurelia home">
+        <span class="logo-mark">A</span>urelia
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#dishes" class="nav-link" data-nav>Dishes</a></li>
+        <li><a href="#menu" class="nav-link" data-nav>Menu</a></li>
+        <li><a href="#chef" class="nav-link" data-nav>Chef</a></li>
+        <li><a href="#gallery" class="nav-link" data-nav>Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link" data-nav>Reviews</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="#reservation" class="btn btn-gold btn-small">Book a Table</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920&auto=format&fit=crop');" role="img" aria-label="Elegant dark dining room at Aurelia with candlelight"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Est. 2012 · Downtown Riverside</p>
+        <h1 class="hero-title">Seasonal Mediterranean, <span>Served with Soul</span></h1>
+        <p class="hero-desc">An intimate dining room, a fire-lit open kitchen, and a menu built each morning from the day's harvest. This is Aurelia — where every plate tells a story of the coast.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold">View Menu</a>
+          <a href="#reservation" class="btn btn-outline">Book a Table</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-images reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Chef plating a dish in Aurelia's open kitchen" class="about-img about-img-main" loading="lazy" width="600" height="700">
+          <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=600&auto=format&fit=crop" alt="Close-up of a signature Aurelia dessert plate" class="about-img about-img-accent" loading="lazy" width="320" height="320">
+          <div class="about-badge">
+            <span>12+</span>
+            <p>Years of Culinary Craft</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2 class="section-title">A Table Rooted in the Mediterranean Coast</h2>
+          <p class="about-text">Aurelia began as a single wood-fired oven and a promise: to cook honestly, with ingredients that never travel farther than they need to. Today, our kitchen partners with local farms and day-boat fisheries to build a menu that shifts with the seasons — never the trends.</p>
+          <p class="about-text">Every detail, from the hand-thrown ceramics to the candlelight over each table, is designed to slow you down. We're not just serving dinner. We're serving an evening.</p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <i class="fa-solid fa-award" aria-hidden="true"></i>
+              <div>
+                <strong>3</strong>
+                <span>Culinary Awards</span>
+              </div>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+              <div>
+                <strong>100%</strong>
+                <span>Locally Sourced</span>
+              </div>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-wine-glass" aria-hidden="true"></i>
+              <div>
+                <strong>250+</strong>
+                <span>Wine Selections</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#chef" class="btn btn-outline-sm">Meet Our Chef <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Popular Dishes Section ===== -->
+    <section class="dishes" id="dishes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Fan Favorites</p>
+          <h2 class="section-title">Our Popular Dishes</h2>
+          <p class="section-sub">A handful of plates our guests never let us take off the menu.</p>
+        </div>
+
+        <div class="dish-grid">
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=700&auto=format&fit=crop" alt="Seared scallops with saffron beurre blanc" loading="lazy" width="500" height="380">
+              <span class="dish-tag">Chef's Pick</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Seared Scallops</h3>
+                <span class="dish-price">$28</span>
+              </div>
+              <p>Diver scallops, saffron beurre blanc, charred fennel, blood orange.</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?q=80&w=700&auto=format&fit=crop" alt="Wood-fired branzino with citrus and herbs" loading="lazy" width="500" height="380">
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Wood-Fired Branzino</h3>
+                <span class="dish-price">$34</span>
+              </div>
+              <p>Whole roasted branzino, preserved lemon, wild oregano, olive oil.</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop" alt="Handmade saffron risotto with prawns" loading="lazy" width="500" height="380">
+              <span class="dish-tag">New</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Saffron Prawn Risotto</h3>
+                <span class="dish-price">$26</span>
+              </div>
+              <p>Carnaroli rice, gulf prawns, saffron, aged parmesan, chive oil.</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=701&auto=format&fit=crop" alt="Slow-roasted lamb shoulder with herb jus" loading="lazy" width="500" height="380">
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Slow-Roasted Lamb</h3>
+                <span class="dish-price">$38</span>
+              </div>
+              <p>Twelve-hour lamb shoulder, rosemary jus, roasted root vegetables.</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=700&auto=format&fit=crop" alt="Heirloom tomato and burrata salad" loading="lazy" width="500" height="380">
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Heirloom & Burrata</h3>
+                <span class="dish-price">$19</span>
+              </div>
+              <p>Heirloom tomatoes, creamy burrata, basil oil, aged balsamic.</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=700&auto=format&fit=crop" alt="Dark chocolate and olive oil tart" loading="lazy" width="500" height="380">
+              <span class="dish-tag">Chef's Pick</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-title-row">
+                <h3>Olive Oil Chocolate Tart</h3>
+                <span class="dish-price">$14</span>
+              </div>
+              <p>Dark chocolate ganache, extra virgin olive oil, sea salt, hazelnut.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menu Section ===== -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our Menu</p>
+          <h2 class="section-title">Crafted for Every Course</h2>
+          <p class="section-sub">A living menu, revised with the seasons. Ask your server about tonight's chef additions.</p>
+        </div>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" role="tab" aria-selected="true" aria-controls="starters" id="tab-starters" data-target="starters">Starters</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="mains" id="tab-mains" data-target="mains">Main Course</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="desserts" id="tab-desserts" data-target="desserts">Desserts</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="drinks" id="tab-drinks" data-target="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" id="starters" role="tabpanel" aria-labelledby="tab-starters">
+            <div class="menu-list">
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Grilled Octopus</h4><span class="dots"></span><span class="price">$18</span></div>
+                <p>Smoked paprika, fingerling potatoes, salsa verde.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Whipped Feta & Honey</h4><span class="dots"></span><span class="price">$13</span></div>
+                <p>Wild honey, chili flake, warm pita, olive tapenade.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Tuna Crudo</h4><span class="dots"></span><span class="price">$21</span></div>
+                <p>Yuzu, avocado, radish, micro shiso, sesame oil.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Roasted Beet Salad</h4><span class="dots"></span><span class="price">$15</span></div>
+                <p>Whipped goat cheese, candied walnuts, sherry vinaigrette.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="mains" role="tabpanel" aria-labelledby="tab-mains" hidden>
+            <div class="menu-list">
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Wood-Fired Branzino</h4><span class="dots"></span><span class="price">$34</span></div>
+                <p>Preserved lemon, wild oregano, extra virgin olive oil.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Slow-Roasted Lamb Shoulder</h4><span class="dots"></span><span class="price">$38</span></div>
+                <p>Rosemary jus, roasted root vegetables, mint gremolata.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Saffron Prawn Risotto</h4><span class="dots"></span><span class="price">$26</span></div>
+                <p>Carnaroli rice, gulf prawns, aged parmesan.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Charred Ribeye</h4><span class="dots"></span><span class="price">$46</span></div>
+                <p>Bone marrow butter, roasted garlic, aged balsamic.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="desserts" role="tabpanel" aria-labelledby="tab-desserts" hidden>
+            <div class="menu-list">
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Olive Oil Chocolate Tart</h4><span class="dots"></span><span class="price">$14</span></div>
+                <p>Dark chocolate ganache, sea salt, hazelnut praline.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Pistachio Baklava</h4><span class="dots"></span><span class="price">$12</span></div>
+                <p>Honey syrup, crushed pistachio, mascarpone cream.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Lemon Olive Oil Cake</h4><span class="dots"></span><span class="price">$11</span></div>
+                <p>Citrus glaze, whipped ricotta, candied lemon peel.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Affogato</h4><span class="dots"></span><span class="price">$9</span></div>
+                <p>Espresso, vanilla bean gelato, cocoa nib.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="drinks" role="tabpanel" aria-labelledby="tab-drinks" hidden>
+            <div class="menu-list">
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Aurelia Spritz</h4><span class="dots"></span><span class="price">$15</span></div>
+                <p>Aperol, prosecco, blood orange, rosemary.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Smoked Old Fashioned</h4><span class="dots"></span><span class="price">$17</span></div>
+                <p>Bourbon, cherrywood smoke, orange bitters.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Coastal Sauvignon Blanc</h4><span class="dots"></span><span class="price">$14</span></div>
+                <p>Glass · crisp, citrus-forward, mineral finish.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-head"><h4>Sparkling Elderflower</h4><span class="dots"></span><span class="price">$8</span></div>
+                <p>Non-alcoholic, elderflower cordial, soda, mint.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer reveal">
+          <a href="#" class="btn btn-outline-sm">Download Full Menu (PDF) <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Chef Section ===== -->
+    <section class="chef" id="chef">
+      <div class="container chef-grid">
+        <div class="chef-img reveal">
+          <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=800&auto=format&fit=crop" alt="Executive Chef Elena Moreau in the Aurelia kitchen" loading="lazy" width="560" height="680">
+          <div class="chef-signature">Elena Moreau</div>
+        </div>
+        <div class="chef-content reveal">
+          <p class="eyebrow">Executive Chef</p>
+          <h2 class="section-title">Elena Moreau</h2>
+          <p class="chef-quote">"Cooking is memory. Every dish on this menu is a place I've been, or a person I've loved."</p>
+          <p class="about-text">Trained in Lyon and seasoned across kitchens in Marseille and Barcelona, Chef Elena brings two decades of coastal Mediterranean technique to Aurelia. Her philosophy is simple: source with integrity, cook with restraint, and let the ingredient speak first.</p>
+
+          <ul class="chef-facts">
+            <li><i class="fa-solid fa-hat-chef" aria-hidden="true"></i> 20 Years of Culinary Experience</li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Trained in Lyon, France</li>
+            <li><i class="fa-solid fa-star" aria-hidden="true"></i> Featured in Coastal Gourmet Magazine</li>
+          </ul>
+
+          <div class="chef-social">
+            <a href="#" aria-label="Chef Elena on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Chef Elena on Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Chef Elena on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery Section ===== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Moments</p>
+          <h2 class="section-title">Inside Aurelia</h2>
+          <p class="section-sub">A glimpse of the dining room, the kitchen, and the plates in between.</p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <figure class="gallery-item span-2">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop" alt="Candlelit dining room at Aurelia" loading="lazy" width="800" height="600">
+            <figcaption>The Dining Room</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=700&auto=format&fit=crop" alt="Plated dessert with gold leaf garnish" loading="lazy" width="500" height="600">
+            <figcaption>Plated with Care</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=700&auto=format&fit=crop" alt="Chef finishing a dish in the open kitchen" loading="lazy" width="500" height="600">
+            <figcaption>The Open Kitchen</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=700&auto=format&fit=crop" alt="Curated wine cellar at Aurelia" loading="lazy" width="500" height="500">
+            <figcaption>The Cellar</figcaption>
+          </figure>
+          <figure class="gallery-item span-2">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop" alt="Guests toasting over dinner at Aurelia" loading="lazy" width="800" height="500">
+            <figcaption>Evenings Well Spent</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials Section ===== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal light">
+          <p class="eyebrow">Guest Reviews</p>
+          <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonial-track reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p>"Every course felt considered. The branzino was the best fish I've had this year, and the service never once felt rushed."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop" alt="Portrait of guest Marisol Vega" loading="lazy" width="56" height="56">
+              <div>
+                <strong>Marisol Vega</strong>
+                <span>Food Critic, The Riverside Journal</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p>"We celebrated our anniversary here and it exceeded every expectation. The lamb shoulder alone is worth the reservation wait."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="Portrait of guest David Okafor" loading="lazy" width="56" height="56">
+              <div>
+                <strong>David Okafor</strong>
+                <span>Regular Guest</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p>"Aurelia is the rare restaurant that gets the small things right — the bread, the lighting, the pacing. A true neighborhood gem."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=100&auto=format&fit=crop" alt="Portrait of guest Priya Nair" loading="lazy" width="56" height="56">
+              <div>
+                <strong>Priya Nair</strong>
+                <span>Regular Guest</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation Section ===== -->
+    <section class="reservation" id="reservation">
+      <div class="container reservation-grid">
+        <div class="reservation-info reveal">
+          <p class="eyebrow">Reservations</p>
+          <h2 class="section-title">Reserve Your Table</h2>
+          <p class="section-sub">Tables are limited each evening to preserve the intimacy of the room. We recommend booking at least 48 hours in advance for weekend dining.</p>
+
+          <ul class="reservation-meta">
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Dinner Service: 5:30 PM – 11:00 PM</li>
+            <li><i class="fa-solid fa-users" aria-hidden="true"></i> Parties of 8+ please call us directly</li>
+            <li><i class="fa-solid fa-shirt" aria-hidden="true"></i> Smart casual dress code</li>
+          </ul>
+
+          <a href="tel:+15551234567" class="btn btn-outline-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i> Or Call (555) 123-4567</a>
+        </div>
+
+        <form class="reservation-form reveal" id="reservationForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName">Full Name</label>
+              <input type="text" id="resName" name="name" placeholder="Jane Doe" required autocomplete="name">
+              <span class="error-msg" id="err-resName"></span>
+            </div>
+            <div class="form-group">
+              <label for="resEmail">Email Address</label>
+              <input type="email" id="resEmail" name="email" placeholder="jane@email.com" required autocomplete="email">
+              <span class="error-msg" id="err-resEmail"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resPhone">Phone Number</label>
+              <input type="tel" id="resPhone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+              <span class="error-msg" id="err-resPhone"></span>
+            </div>
+            <div class="form-group">
+              <label for="resGuests">Guests</label>
+              <select id="resGuests" name="guests" required>
+                <option value="">Select</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+                <option>7+ Guests (call us)</option>
+              </select>
+              <span class="error-msg" id="err-resGuests"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required>
+              <span class="error-msg" id="err-resDate"></span>
+            </div>
+            <div class="form-group">
+              <label for="resTime">Time</label>
+              <input type="time" id="resTime" name="time" required>
+              <span class="error-msg" id="err-resTime"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resMessage">Special Requests <span class="optional">(optional)</span></label>
+            <textarea id="resMessage" name="message" rows="4" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Visit Us</p>
+          <h2 class="section-title">Find Aurelia</h2>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <strong>Address</strong>
+              <p>128 Harbor Lane, Riverside District, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:reservations@aurelia-restaurant.com">reservations@aurelia-restaurant.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <div>
+              <strong>Opening Hours</strong>
+              <p>Tue – Thu: 5:30 PM – 10:00 PM<br>
+                 Fri – Sat: 5:30 PM – 11:00 PM<br>
+                 Sun: 5:00 PM – 9:00 PM<br>
+                 Mon: Closed</p>
+            </div>
+          </div>
+
+          <div class="chef-social contact-social">
+            <a href="#" aria-label="Aurelia on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Aurelia on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Aurelia on Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <iframe
+            title="Aurelia location on Google Maps"
+            src="https://www.google.com/maps?q=New+York,NY&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">A</span>urelia
+        </a>
+        <p>Contemporary Mediterranean dining in the heart of the Riverside District. Seasonal, honest, unforgettable.</p>
+        <div class="chef-social">
+          <a href="#" aria-label="Aurelia on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Aurelia on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Aurelia on Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Aurelia on Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Opening Hours</h5>
+        <ul class="footer-hours">
+          <li><span>Tue – Thu</span><span>5:30 – 10:00 PM</span></li>
+          <li><span>Fri – Sat</span><span>5:30 – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>5:00 – 9:00 PM</span></li>
+          <li><span>Monday</span><span>Closed</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h5>Stay in the Loop</h5>
+        <p>Seasonal menu launches, chef events, and private dining offers — straight to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required autocomplete="email">
+          <button type="submit" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+        </form>
+        <p class="newsletter-success" id="newsletterSuccess" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Aurelia Restaurant. All rights reserved.</p>
+      <p>Crafted with <i class="fa-solid fa-heart" aria-hidden="true"></i> for those who love the table.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll To Top ===== -->
+  <button id="scrollTopBtn" aria-label="Scroll back to top" type="button">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
